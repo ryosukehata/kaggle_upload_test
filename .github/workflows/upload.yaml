@@ -28,7 +28,6 @@ jobs:
         run: zip -r ./upload_kaggle_dir/src.zip ./src
 
       - name: Upload to kaggle
-        shell: bash
         env:
           KAGGLE_USERNAME: ${{ secrets.KaggleUsername }}
           KAGGLE_KEY: ${{ secrets.KaggleKey }}
